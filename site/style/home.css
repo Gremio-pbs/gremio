@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --Titlos:'Pridi', serif;
+    --Tetx:'Roboto', sans-serif;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+#cards-opcao{
+    display: flex;
+    margin-bottom: 60px;
+}
+.card-opcao{
+    padding: 20px;
+    margin-right: 45px;
+    margin-left: 38px;
+    border-radius: 10px;
+    max-height: 180px;
+    font-family: var(--Titlos);
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.card-opcao > p{
+    margin-bottom: 20px;
+}
+.card-opcao > img{
+    width: 78px;
+    padding: 14px;
+}
+
+.link, .lista{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.link:hover, .lista > p:hover, .opcao > p:hover{
+    cursor: pointer;
+}
+.opcao{
+    display: none;
+    background-color: #0c1524;
+    padding: 4px 0px;
+    border-top: 1px solid white;
+    border-radius: 0px 0px 4px 4px;
+    position: relative;
+    max-height: 90px;
+    overflow-y: auto;
+}
+.opcao > p{
+    font-weight: normal;
+    border: 1px solid white;
+    margin-bottom: 4px;
+}
+
+#azul{
+    background-color: #0c1524;
+}
+#cinza{
+    background-color: #242c39;
+}
+/*=====================================================================*/
+
+#podcast{
+    width: 100%;
+    background-color: #203828;
+    border-radius: 10px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+#audio{
+    width: 48%;
+    text-align: center;
+}
+#audio > h1{
+    color: white;
+    font-size: 22px;
+    font-family: var(--Titlos);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#audio > img{
+    border-radius: 4px;
+}
+#icon-audio > img{
+    width: 20px;
+    margin: 10px 20px;
+}
+#audio > audio{
+    width: 240px;
+    height: 40px;
+}
+
+#linha{
+    width: 1px;
+    height: 300px;
+    background-color: white;
+}
+
+#resumo{
+    width: 48%;
+}
+#resumo > h1, #resumo > p{
+    padding-left: 60px;
+    color: white;
+}
+#resumo > h1{
+    font-family: var(--Titlos);
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+/*=====================================================================*/
+#titulo{
+    color: #1374bd;
+    font-family: var(--Titlos);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#cards-gremio{
+    display: flex;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.integrante{
+    margin: 0px 20px;
+    min-width: 190px;
+    text-align: center;
+}
+.integrante > img{
+    border-radius: 4px;
+    width: 60%;
+}
+.integrante > h3{
+    font-family: var(--Titlos);
+    font-size: 16px;
+    font-weight: 600;
+}
+/*=====================================================================*/
+#destaque{
+    color: #ff9c00;
+}
+#focoenem{
+    background-image: url(../../imgs/focoenem.png);
+    width: 100%;
+    height: 640px;
+    border-radius: 10px
+}
+#focoenem > img{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+#focoenem > p{
+    color: white;
+    width: 340px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+#botao-focoenem{
+    color: #ff9c00;
+    font-family: var(--Titlos);
+    font-weight: 600;
+    width: 170px;
+    margin-left: 80px;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+}
+#botao-focoenem:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+}
+:root{
+    --Titlos:'Pridi', serif;
+    --Tetx:'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--Tetx);
+}
+
+.atual{
+    color: #1374BD;
+
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+#logo{
+    margin-right: 400px;
+}
+#logo > img{
+    width: 107px;
+}
+
+#nav{
+    margin-right: 137px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    font-family: var(--Titlos); 
+    font-weight: 600;
+}
+nav > p{
+    color: white;
+    padding-left: 5px;
+    margin-right: 40px;
+}
+.icon-top{
+    width: 24px;
+}
+nav > p, .icon-top:hover, #celular{
+    cursor: pointer;
+}
+/* ================================================ */
+#celular{
+    margin-right: 40px;
+    max-height: 20px;
+    flex-direction: column;
+    display: none;
+}
+#celular > img{
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+}
+#lista-nav{
+    display: none;
+    background-color: #0c1524;
+    padding: 4px 0px;
+    border-top: 1px solid white;
+    border-radius: 0px 0px 4px 4px;
+    position: relative;
+}
+#lista-nav > p{
+    color: white;
+    font-family: var(--Titlos);
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid white;
+    margin-bottom: 4px;
+}
+/* ================================================ */
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: var(--Titlos);
+    justify-content: center;
+}
+#logo-pbs > img{
+    width: 107px;
+    margin-top: 40px;
+    margin-right: 250px;
+}
+.box{
+    padding: 20px 0px;
+    display: flex;
+}
+#redes{
+    margin-right: 250px;
+}
+.box > img{
+    height: 24px;
+    margin-right: 10px;
+}
+
+#criador:hover{
+    cursor: pointer;
+}

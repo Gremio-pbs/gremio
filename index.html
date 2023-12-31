@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site/style/header-footer.css">
+    <link rel="stylesheet" href="site/style/home.css">
+    <link rel="stylesheet" href="site/style/responsivo.css">
+    <script src="site/scripts/listas.js"></script>
+    <script src="site/scripts/links.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imgs/logo-azul-semfundo.png" alt="Logo-PBS">
+        </div>
+        <div id="nav">
+            <nav>
+                <img src="imgs/casa-azul.png" alt="" class="icon-top"> <p class="atual" onclick="t()">HOME</p>
+                <img src="imgs/papel.png" alt="" class="icon-top"> <p onclick="Enem()">ENEM</p>
+                <img src="imgs/pilha-de-tres-livros.png" alt="" class="icon-top"> <p onclick="Pism()">PISM</p>
+                <img src="imgs/podcast-branco.png" alt="" class="icon-top"> <p onclick="Podcast()">PODCASTS</p>
+                <img src="imgs/informacoes.png" alt="" class="icon-top"> <p>SOBRE</p>
+            </nav>
+        </div>
+        <div id="celular">
+            <img src="imgs/cardapio.png" alt="" onclick="ListaCelular()">
+            <div id="lista-nav">
+                <p class="atual" onclick="t()">HOME</p>
+                <p onclick="Enem()">ENEM</p>
+                <p onclick="Pism()">PISM</p>
+                <p onclick="Podcast()">PODCASTS</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="cards-opcao">
+            <div class="card-opcao" id="azul">
+                <img src="imgs/podcast-branco.png" alt="PODCASTS">
+                <p>PODCASTS</p>
+                <div class="lista">
+                    <p onclick="ListaPodcast()">LISTA</p>
+                    <div class="opcao">
+                        <p onclick="Podcast()">#1 RACISMO</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-opcao" id="cinza">
+                <img src="imgs/video-tutorial.png" alt="VÍDEO AULAS">
+                <p>VÍDEO AULAS</p>
+                <div class="lista">
+                    <p onclick="ListaVideos()">LISTA</p>
+                    <div class="opcao">
+                        <p onclick="Portugues()">Portugês</p>
+                        <p onclick="Matematica()">Matemática</p>
+                        <p onclick="Biologia()">Biologia</p>
+                        <p onclick="Quimica()">Química</p>
+                        <p onclick="Fisica()">Física</p>
+                        <p onclick="Historia()">História</p>
+                        <p onclick="Geografia()">Geografia</p>
+                        <p onclick="Filosofia()">Filosofia</p>
+                        <p onclick="Sociologia()">Sociologia</p>
+                        <p onclick="Artes()">Artes</p>
+                        <p onclick="Educacao()">Ed. Física</p>
+                        <p onclick="Literatura()">Literatura</p>
+                        <p onclick="Ingles()">Ingês</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-opcao" id="azul">
+                <img src="imgs/f-dentro-de-um-circulo.png" alt="FOCOENEM">
+                <p>FOCOENEM</p>
+                <div class="link">
+                    <p onclick="Focoenem()">VIAJAR</p>
+                </div>
+            </div>
+        
+            <div class="card-opcao" id="cinza">
+                <img src="imgs/papel.png" alt="ENEM">
+                <p>ENEM</p>
+                <div class="link">
+                    <p>VIAJAR</p>
+                </div>
+            </div>
+        
+            <div class="card-opcao" id="azul">
+                <img src="imgs/pilha-de-tres-livros.png" alt="PISM">
+                <p>PISM</p>
+                <div class="link">
+                    <p>VIAJAR</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="podcast" name="podcast">
+            <div id="audio">
+                <h1>#1 RACISMO</h1>
+                <img src="imgs/capa-rascismo.png" alt="Logo PODCAST" onclick="Podcast()">
+                <div id="icon-audio">
+                    <img src="imgs/youtube.png" alt="Escutar no youtube" onclick="Podcast()">
+                    <img src="imgs/download.png" alt="Baixar podcast">
+                    <img src="imgs/logotipo-spotify.png" alt="Escutar no spotify">
+                </div>
+                <audio src="podcast1.mp3" controls></audio>
+            </div>
+            <div id="linha"></div>
+            <div id="resumo">
+                <h1>O QUE É RACISMO?</h1>
+                <p>Racismo consiste no preconceito e na discriminação com base em percepções sociais baseadas em diferenças biológicas entre pessoas e povos. Preconceito, discriminação ou antagonismo por parte de um indivíduo, comunidade ou instituição contra uma pessoa ou pessoas pelo fato de pertencer a um determinado grupo racial ou étnico, tipicamente marginalizado ou uma minoria.</p>
+            </div>
+        </section>
+
+        <h1 id="titulo">GRÊMIO ESTUDANTIL</h1>
+        <div id="cards-gremio">
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>DIRETOR-GERAL</h3>
+                <p>NOME</p>
+            </div>
+
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>VICE-PRESIDENTE</h3>
+                <p>NOME</p>
+            </div>
+
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>PRESIDENTE</h3>
+                <p>NOME</p>
+            </div>
+
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>SECRETÁRIO-GERAL</h3>
+                <p>NOME</p>
+            </div>
+
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>TESOUREIRO-GERAL</h3>
+                <p>NOME</p>
+            </div>
+
+            <div class="integrante">
+                <img src="imgs/user.png" alt="FOTO">
+                <h3>SUPLENTE</h3>
+                <p>NOME</p>
+            </div>
+        </div>
+        
+        <section id="focoenem">
+            <img src="imgs/logo-projeto.png" alt="">
+            <p>Cursos, plataformas e vídeo aulas focadas no <span id="destaque">ENEM</span> e na <span id="destaque">língua Inglesa</span> escolhidas a dedo para você aluno dedicado!</p>
+            <div id="botao-focoenem" onclick="Focoenem()">
+                <p>CONFERIR FOCO ENEM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="logo-pbs">
+            <img src="imgs/logo-branca-semfundo.png" alt="Logo-PBS">
+        </div>
+
+        <div id="redes">
+            <h3>Infomações</h3>
+            <div class="box"><img src="imgs/mapa.png" alt="Local escola"> <p>SANTO ANTÔNIO DE PÁDUA/RJ</p></div>
+            <div class="box"><img src="imgs/whatsapp.png" alt="whatsapp"> <p>+55 (32) 3855-1221</p></div>
+            <div class="box"><img src="imgs/configuracoes.png" alt="Criador"> <p onclick="Criador()" id="criador">Gabriel de Abreu</p></div>
+
+        </div>
+        <div id="freepik">
+            <h3>Créditos pelos icons:</h3>
+            <ul>
+                <li>Freepik</li>
+                <li>Anggara</li>
+                <li>Stockio</li>
+                <li>NajmunNahar</li>
+                <li>TravisAvery</li>
+                <li>Dave Gandy</li>
+                <li>Mayor</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

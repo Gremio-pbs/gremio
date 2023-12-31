@@ -1,0 +1,125 @@
+@media only screen and (max-width:1000px){
+    #logo{
+        margin-right: 100px;
+    }
+    #nav{
+        margin-right: 80px;
+    }
+    #cards-opcao{
+        overflow-y: auto;
+    }
+    #logo-pbs > img{
+        margin-right: 150px;
+    }
+    #redes{
+        margin-right: 150px;
+    }
+}
+
+@media only screen and (max-width:860px){
+    #logo > img{
+        width: 80px;
+    }
+    #nav{
+        margin-right: 0px;
+    }
+    nav > p{
+        margin-right: 20px;
+    }
+    .icon-top{
+        width: 18px;
+        height: 18px;
+    }
+    .card-opcao{
+        margin: 0px 18px;
+
+    }
+    #focoenem{
+        background-image: url(../../imgs/focoenem-medio.png);
+        background-repeat: no-repeat;
+        height: 338px;
+    }
+    #focoenem > img{
+        width: 200px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    #focoenem > p{
+        width: 200px;
+        margin-left: 40px;
+        margin-bottom: 14px;
+    }
+    #botao-focoenem{
+        margin-left: 26px;
+    }
+
+    #logo-pbs > img{
+        width: 80px;
+        margin-right: 100px;
+    }
+    #redes{
+        margin-right: 50px;
+    }
+    #box{
+        padding: 10px 0px;
+    }
+    #box > img{
+        height: 18px;
+    }
+}
+@media only screen and (max-width:414px){
+    header{
+        max-height: 80px;
+    }
+    #logo{
+        margin-right: 160px;
+    }
+    nav{
+        display: none;
+    }
+    #celular{
+        display: flex;
+        margin-left: 20px;
+    }
+    #podcast{
+        display: block;
+
+    }
+    #audio{
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    #linha{
+        width: 260px;
+        height: 1px;
+        margin: auto;
+    }
+    #resumo{
+        margin-top: 16px;
+        width: 90%;
+    }
+    #resumo > h1{
+        padding-left: 60px;
+    }
+    #resumo > p{
+        padding-left: 30px;
+    }
+    footer{
+        display: block;
+    }
+    #logo-pbs{
+        text-align: center;
+    }
+    #logo-pbs > img{
+        width: 90px;
+        margin: 10px 0px;
+    }
+    #redes{
+        width: 80%;
+        margin: auto;
+    }
+    #freepik{
+        width: 80%;
+        margin: auto;
+    }
+}
