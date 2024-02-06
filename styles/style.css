@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --color0:#0b8ade;
+    --color1:#2dd634;
+    --color2:#f37430;
+    --footer-color:#0c1524;
+}
+
+* {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-weight: 800;
+}
+
+header{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+}
+main{
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 10em;
+}
+.logo {
+    width: 30%;
+    text-align: center;
+}
+.logo > img{
+    width: 16%;
+}
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+#links-menu > a {
+    color: black;
+    font-size: 1.3em;
+    margin: 0em 1em;
+    padding: 0.2em 0em;
+    text-decoration: none;
+    font-family: var(--titulo);
+    font-weight: 500;
+    position: relative;
+}
+#links-menu a:hover{
+    color: var(--color1);
+    transition: 0.4s ease-in-out;
+}
+#links-menu a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgba(6, 224, 6, 0.637);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#links-menu a:hover::after {
+    width: 100%;
+}
+/* ======================================================================== */
+button {
+    width: 2.7em;
+    height: 2.5em;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: transparent;
+    display: none;
+    cursor: pointer;
+    margin: auto;
+}
+.linha {
+    width: 1.3em;
+    height: 0.2em;
+    background-color: black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.4em auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+}
+button.ativar {
+    border: 2px solid red;
+}
+button.ativar .linha:nth-child(1){
+    transform: translateY(6px) rotate(-49deg);
+    background-color: red;
+}
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+button.ativar .linha:nth-child(3){
+    transform: translateY(-10px) rotate(49deg);
+    background-color: red;
+}
+/* ======================================================================== */
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#inicio > h1 {
+    margin-bottom: 1rem;
+    color: var(--color0);
+}
+#inicio > h3 {
+    font-weight: 600;
+}
+#inicio > .conselho {
+    margin-top: 1.3em;
+    border: 1px solid var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px var(--color1);
+    padding: 1.4em;
+}
+#inicio > .conselho > p {
+    font-size: 1.1em;
+    color: var(--color1);
+}
+/* ======================================================================== */
+#nota{
+    margin-top: 5em;
+    padding: 2rem 0rem;
+    background-color: var(--color0);
+    text-align: center;
+    color: white;
+}
+#nota > h1 {
+    margin-bottom: 1rem;
+}
+#nota > p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+#nota > #btn {
+    width: 210px;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.3em 0em;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: var(--color1);
+    cursor: pointer;
+}
+/* ======================================================================== */
+#aulas {
+    margin-top: 5em;
+    padding: 1em;
+}
+#aulas > h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color0);
+}
+#aulas > .caixas {
+    columns: 2;
+}
+#aulas > .caixas > .caixa {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 1em;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
+    background-color: white;
+    transition: 0.3s;
+}
+#aulas > .caixas > .caixa > h2{
+    margin-bottom: 1rem;
+    color: var(--color0);
+}
+.btn-aula {
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#aulas > .caixas > .caixa:hover {
+    box-shadow: 0px 0px 10px var(--color1);
+    .btn-aula {
+        color: white;
+        background-color: var(--color1);
+        box-shadow: 0px 0px 6px var(--color1);
+    }
+}
+/* ======================================================================== */
+#gremio {
+    margin-top: 5em;
+    padding: 1em;
+    background-color: var(--color0);
+    color: white;
+    text-align: center;
+}
+#gremio > h1 {
+    margin-bottom: 2rem;
+}
+#gremio > .integrantes {
+    columns: 2;
+}
+#gremio > .integrantes > .cargo > img{
+    border: 1px solid black;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+#gremio > .integrantes > .cargo {
+    margin-bottom: 2rem;
+}
+/* ======================================================================== */
+#podcast {
+    margin-top: 5em;
+    padding: 1em;
+    display: flex;
+}
+#podcast > .microfone {
+    transform: scaleX(-1);
+    width: 30%;
+}
+#podcast > .podcasts {
+    width: 60%;
+    padding:1em;
+}
+#podcast > .podcasts > h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color0);
+}
+#podcast > .podcasts > p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.link-podcast {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0.3em 0.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.link-podcast > h1 {
+    width: 20%;
+}
+.link-podcast > h2 {
+    font-size: 1.3em;
+    width: 60%;
+}
+.link-podcast > p{
+    font-size: 2em;
+    width: 20%;
+    color: var(--color1);
+    border-left: 2px solid black;
+}
+/* ======================================================================== */
+#focoenem{
+    margin: 5rem 0rem;
+    background-image: url(../imgs/focoenem.png);
+    background-size: cover;
+    height: 600px;
+    padding: 2rem;
+    background-position: cover;
+}
+#focoenem > img {
+    width: 40%;
+    padding-top: 4em;
+    margin-bottom: 2rem;
+}
+#focoenem > p{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+#focoenem > p > span {
+    color: var(--color2);
+}
+#focoenem > .btn-focoenem {
+    border: 2px solid var(--color2);
+    padding: 0.3em 0.5em;
+    width: 200px;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+    font-weight: 700;
+    color: var(--color2);
+    cursor: pointer;
+}
+/* ======================================================================== */
+#enem {
+    padding: 1em;
+}
+#enem > h1 , #enem > h2{
+    color: var(--color0);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#enem > h2 {
+    margin-top: 2rem;
+}
+#enem > h2 > span {
+    color: var(--color2);
+}
+#enem > .verde, #enem > .laranja, #enem > .vermelho {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0.3em 0em;
+}
+#enem  p{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 4px;
+}
+#enem > .verde {
+    border-left: 6px solid var(--color1);
+}
+#enem > .laranja {
+    border-left: 6px solid var(--color2);
+}
+#enem > .vermelho {
+    border-left: 6px solid red;
+}
+.videos-enem {
+    text-align: center;
+}
+.videos-enem > img{
+    margin-bottom: 4rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.685);
+    cursor: pointer;
+}
+/* ======================================================================== */
+footer {
+    background-color: var(--footer-color);
+    color: white;
+}
+.escola {
+    display: flex;
+    align-items: center;
+}
+.escola > .box-img{
+    width: 50%;
+    text-align: center;
+}
+.escola > .box-img > img {
+    width:  100px;
+}
+.escola > .box-info {
+    width: 50%;
+    .icons {
+        display: flex;
+        margin: 1em 0em;
+        align-items: center;
+    }
+    .icons > p {
+        padding-left: 4px;
+    }
+}
+.dev {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dev > p{
+    font-size: 0.9em;
+    padding-right: 2em;
+}
+.dev > img {
+    width: 3%;
+}
+.dev > a {
+    text-decoration: none;
+    padding-left: 4px;
+    color: white;
+    cursor: pointer;
+}
+.dev > a:hover{
+    color: var(--color2);
+    text-decoration: underline;
+}
+/* ======================================================================== */
+.voltar a{
+    background-color: rgba(119, 118, 118, 0.616);
+    display: inline-block;
+    padding: 0.5em 0.6em;
+    margin: 0em 2em 1em 0em;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s ease-in-out;
+}
+.voltar a:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: var(--color0);
+}
+/* ======================================================================== */
+@media only screen and (max-width:770px){
+    #links-menu > a {
+        font-size: 1em;
+        margin: 0em 0.4em;
+    }
+}
+
+@media only screen and (max-width:700px){
+    button{
+        display: block;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 20%;
+        background-color: white;
+        border: 1px solid black;
+        border-top: none;
+    }
+    nav {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:570px){
+    .logo > img{
+        width: 50%;
+    }
+    #inicio{
+        text-align: center;
+    }
+    #gremio > .integrantes > .cargo > img{
+        width: 100px;
+        height: 100px;
+    }
+    #podcast > .microfone {
+        display: none;
+    }
+    #podcast > .podcasts {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:430px){
+    #aulas > .caixas > .caixa {
+        width: 150px;
+    }
+    #aulas > .caixas > .caixa > h2{
+        font-size: 1em;
+    }
+    .btn-aula{
+        padding: 0.4em 0.6em;
+        font-size: 0.9em;
+    }
+    #focoenem > img{
+        width: 80%;
+    }
+    #enem {
+        padding: 1em 0em;
+    }
+    #enem > .videos-enem > img{
+        width: 360px;
+        height: 200px;
+    }
+}

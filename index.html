@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grêmio PBS</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="imgs/logo-azul-semfundo.png" type="image" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <a name="topo"></a>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo-escola.png" alt="logo">
+        </div>
+        <nav>
+            <button id="btn-menu" onclick="animar()">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+            <div id="links-menu" class="menu">
+                <a href="#topo">Inicio</a>
+                <a href="#aulas">Estudos</a>
+                <a href="https://alunoonline.educacao.rj.gov.br/AlunoOnline/Academico/Boletim.aspx" target="_blank">Boletim</a>
+                <a href="#podcast">Podcast</a>
+                <a href="#enem">ENEM</a>
+                <a href="https://gremio-pbs.github.io/focoenem/">FocoEnem</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Sejam bem-vindos novos alunos e veteranos!</h1>
+            <h3>Sejam bem-vindos ao nosso ambiente escolar</h3>
+            <h3>Estamos sempre melhorando e inovando na forma de ensinar</h3>
+            <div class="conselho">
+                <p>O estudo e o esforço sempre foi, e sempre será, o motivo</p>
+                <p>do sucesso daqueles que não tiveram medo de tentar.</p>
+            </div>
+        </section>
+        <section id="nota">
+            <h1>Curioso(a) para saber sua nota?</h1>
+            <p>Clique no botão abaixo para ver seu boletim.</p>
+            <p>Será necessario sua matricula escolar, basta pedir na secretaria da escola.</p>
+            <div id="btn" onclick="Boletim()">VER MEU BOLETIM</div>
+        </section>
+        <section id="aulas">
+            <a name="aulas"></a> <!--Ancora-->
+            <h1>Vídeo aulas de reforço:</h1>
+            <div class="caixas">
+                <div class="caixa">
+                    <h2>Matemática ---&gt; </h2>
+                    <a href="#" class="btn-aula" onclick="Matematica()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Português ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Portugues()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Biologia ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Biologia()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Química ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Quimica()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Física ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Fisica()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>História ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Historia()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Geografia ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Geografia()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Redação ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Redacao()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Sociologia ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Sociologia()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Artes ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Artes()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Ed. Física ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Educacao()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Literatura ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Literatura()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Inglês ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Ingles()">SEGUIR</a>
+                </div>
+                <div class="caixa">
+                    <h2>Filosofia ---&gt;</h2>
+                    <a href="#" class="btn-aula" onclick="Filosofia()">SEGUIR</a>
+                </div>
+            </div>
+        </section>
+        <section id="gremio">
+            <h1>Integrantes do Grêmio Estudantil - 2024</h1>
+            <div class="integrantes">
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Presidente</h3>
+                    <p>Nome Aluno</p>
+                </div>
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Diretor-Geral</h3>
+                    <p>Nome Aluno</p>
+                </div>
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Suplente-Geral</h3>
+                    <p>Nome Aluno</p>
+                </div>
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Vice-Presidente</h3>
+                    <p>Nome Aluno</p>
+                </div>
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Secretário-Geral</h3>
+                    <p>Nome Aluno</p>
+                </div>
+                <div class="cargo">
+                    <img src="imgs/user.png" alt="">
+                    <h3>Tesoureiro-Geral</h3>
+                    <p>Nome Aluno</p>
+                </div>
+            </div>
+        </section>
+        <section id="podcast">
+            <a name="podcast"></a> <!--Ancora-->
+            <div class="microfone">
+                <img src="imgs/microfone.png" alt="">
+            </div>
+            <div class="podcasts">
+                <h1>Podcasts do Grêmio</h1>
+                <p>Criado pelo grêmio com o intuito de trazer<br> mais interatividade entre os alunos</p>
+                <div class="link-podcast">
+                    <h1>#1</h1>
+                    <h2>Racismo</h2>
+                    <p>></p>
+                </div>
+                <div class="link-podcast">
+                    <h1>#2</h1>
+                    <h2>Anciedade</h2>
+                    <p>></p>
+                </div>
+            </div>
+        </section>
+        <section id="focoenem">
+            <img src="imgs/logo-projeto.png" alt="">
+            <p>Cursos, aplicativos e vídeo aulas focadas no <br> <span>ENEM</span> e na <span>Língua inglesa</span> escolhidas a dedo para você aluno PBS!</p>
+            <div class="btn-focoenem" onclick="focoenem()">CONFERIR FOCOENEM</div>
+        </section>
+        <scetion id="enem">
+            <a name="enem"></a>
+            <h1>ENEM 2024</h1>
+            <div class="verde"><p>Esse é um guia rápido para fazer as inscrições no ENEM 2024</p></div>
+            <div class="verde"><p>Antes de fazer o cadastro no INEP, será necessário criar uma conta no gov.br</p></div>
+            <div class="verde"><p>Após ter criado a conta gov, você deve criar uma conta no INEP, vai ser o lugar onde você, candidato, recebera as informações sobre o dia, hora e local de sua prova.</p></div>
+            <div class="laranja"><p>A prova é dividida em dois domingos do mês e com 5 horas de duração cada dia.</p></div>
+            <div class="laranja"><p>A prova é composta por 180 Questões e uma redação dissertativa argumentativa sobre algum tema que só será revelado no dia da prova.</p></div>
+            <div class="laranja"><p>Só será permitido a entrada com canetas pretas, RG, comprovante de inscrição, lanches lacrados e garrafas de água sem rótulos.</p></div>
+            <div class="vermelho"><p>Após o início das provas, o candidato só irá poder abandonar o local da prova após 2 horas de prova</p></div>
+            <div class="vermelho"><p>Caso o candidato passe mal ao fazer a prova, ele será eliminado se for necessário chamar uma ambulância.</p></div>
+            <div class="vermelho"><p>Se o candidato for pego colando, ele poderá ser preso por 3 a 5 anos</p></div>
+            <h2>Alguns vídeos para lhe guiar nessa jornada</h2>
+            <div class="videos-enem">
+                <img src="imgs/v1.png" alt="" onclick="v1()">
+                <img src="imgs/v2.png" alt="" onclick="v2()">
+                <img src="imgs/v3.png" alt="" onclick="v3()">
+            </div>
+            <h2><span>Boa sorte na prova!</span></h2>
+        </scetion>
+    </main>
+
+    <footer>
+        <div class="escola">
+            <div class="box-img">
+                <img src="imgs/logo-branca-semfundo.png" alt="">
+            </div>
+            <div class="box-info">
+                <div class="icons">
+                    <span class="material-symbols-outlined">call</span>
+                    <p>+55 (32) 3855-1221</p>
+                </div>
+                <div class="icons">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Santo Antônio de Pádua/RJ</p>
+                </div>
+            </div>
+        </div>
+        <div class="dev">
+            <p>Desenvolvido por:</p>
+            <img src="imgs/criador.png" alt="">
+            <a href="https://github.com/Gabriel-Esposito" target="_blank">Gabriel de Abreu - 2024&copy;</a>
+        </div>
+    </footer>
+
+    <div class="voltar">
+        <a href="#topo"><span class="material-symbols-outlined">arrow_upward</span></a>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
